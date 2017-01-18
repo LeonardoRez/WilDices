@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A226570E009E00C76A517B3 /* Pods_WilDices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB7C93831F3CF7F9241E8D3 /* Pods_WilDices.framework */; };
+		3F2B3C361E2CEF120080D402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B3C351E2CEF120080D402 /* AppDelegate.swift */; };
+		3F2B3C3B1E2CEF120080D402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2B3C391E2CEF120080D402 /* Main.storyboard */; };
+		3F2B3C3E1E2CEF120080D402 /* WilDices.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B3C3C1E2CEF120080D402 /* WilDices.xcdatamodeld */; };
+		3F2B3C401E2CEF120080D402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F2B3C3F1E2CEF120080D402 /* Assets.xcassets */; };
+		3F2B3C431E2CEF120080D402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2B3C411E2CEF120080D402 /* LaunchScreen.storyboard */; };
+		3F515BF91E2E500800BB5201 /* MesasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F515BF81E2E500800BB5201 /* MesasTableViewController.swift */; };
+		3F515BFB1E2E502700BB5201 /* MesaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F515BFA1E2E502700BB5201 /* MesaTableViewCell.swift */; };
+		3F515BFD1E2E51FC00BB5201 /* MesaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F515BFC1E2E51FC00BB5201 /* MesaViewController.swift */; };
+		3F515BFF1E2E526500BB5201 /* ReferenciaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F515BFE1E2E526500BB5201 /* ReferenciaTableViewController.swift */; };
+		3F515C011E2E527C00BB5201 /* PersonagemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F515C001E2E527C00BB5201 /* PersonagemTableViewCell.swift */; };
+		3F515C031E2E52AA00BB5201 /* FichasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F515C021E2E52AA00BB5201 /* FichasTableViewController.swift */; };
+		3F515C051E2E52B600BB5201 /* FichaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F515C041E2E52B600BB5201 /* FichaTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F2B3C321E2CEF120080D402 /* WilDices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WilDices.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F2B3C351E2CEF120080D402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F2B3C3A1E2CEF120080D402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F2B3C3D1E2CEF120080D402 /* WilDices.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WilDices.xcdatamodel; sourceTree = "<group>"; };
+		3F2B3C3F1E2CEF120080D402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F2B3C421E2CEF120080D402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F2B3C441E2CEF120080D402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F515BF81E2E500800BB5201 /* MesasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MesasTableViewController.swift; sourceTree = "<group>"; };
+		3F515BFA1E2E502700BB5201 /* MesaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MesaTableViewCell.swift; sourceTree = "<group>"; };
+		3F515BFC1E2E51FC00BB5201 /* MesaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MesaViewController.swift; sourceTree = "<group>"; };
+		3F515BFE1E2E526500BB5201 /* ReferenciaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenciaTableViewController.swift; sourceTree = "<group>"; };
+		3F515C001E2E527C00BB5201 /* PersonagemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonagemTableViewCell.swift; sourceTree = "<group>"; };
+		3F515C021E2E52AA00BB5201 /* FichasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichasTableViewController.swift; sourceTree = "<group>"; };
+		3F515C041E2E52B600BB5201 /* FichaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaTableViewCell.swift; sourceTree = "<group>"; };
+		4EFA83BBCF096A539C0AA8D4 /* Pods-WilDices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WilDices.release.xcconfig"; path = "Pods/Target Support Files/Pods-WilDices/Pods-WilDices.release.xcconfig"; sourceTree = "<group>"; };
+		8EB7C93831F3CF7F9241E8D3 /* Pods_WilDices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WilDices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4DA1C60396B34B2FB7A36A2 /* Pods-WilDices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WilDices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WilDices/Pods-WilDices.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F2B3C2F1E2CEF120080D402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A226570E009E00C76A517B3 /* Pods_WilDices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		086A60C0771DBCCCBCA84F14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4DA1C60396B34B2FB7A36A2 /* Pods-WilDices.debug.xcconfig */,
+				4EFA83BBCF096A539C0AA8D4 /* Pods-WilDices.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3F2B3C291E2CEF120080D402 = {
+			isa = PBXGroup;
+			children = (
+				3F2B3C341E2CEF120080D402 /* WilDices */,
+				3F2B3C331E2CEF120080D402 /* Products */,
+				086A60C0771DBCCCBCA84F14 /* Pods */,
+				72C830CB083D4E9D8FD17CEA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F2B3C331E2CEF120080D402 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F2B3C321E2CEF120080D402 /* WilDices.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F2B3C341E2CEF120080D402 /* WilDices */ = {
+			isa = PBXGroup;
+			children = (
+				3F2B3C4D1E2CF05E0080D402 /* Supporting files */,
+				3F2B3C4C1E2CF0250080D402 /* Controller */,
+				3F2B3C4B1E2CF01C0080D402 /* View */,
+				3F2B3C4A1E2CF0130080D402 /* Model */,
+			);
+			path = WilDices;
+			sourceTree = "<group>";
+		};
+		3F2B3C4A1E2CF0130080D402 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F2B3C3C1E2CEF120080D402 /* WilDices.xcdatamodeld */,
+				3F2B3C4F1E2CF07F0080D402 /* DAO */,
+				3F2B3C4E1E2CF07B0080D402 /* VO */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3F2B3C4B1E2CF01C0080D402 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F2B3C391E2CEF120080D402 /* Main.storyboard */,
+				3F2B3C411E2CEF120080D402 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3F2B3C4C1E2CF0250080D402 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F515BF81E2E500800BB5201 /* MesasTableViewController.swift */,
+				3F515BFA1E2E502700BB5201 /* MesaTableViewCell.swift */,
+				3F515BFC1E2E51FC00BB5201 /* MesaViewController.swift */,
+				3F515BFE1E2E526500BB5201 /* ReferenciaTableViewController.swift */,
+				3F515C001E2E527C00BB5201 /* PersonagemTableViewCell.swift */,
+				3F515C021E2E52AA00BB5201 /* FichasTableViewController.swift */,
+				3F515C041E2E52B600BB5201 /* FichaTableViewCell.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3F2B3C4D1E2CF05E0080D402 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				3F2B3C351E2CEF120080D402 /* AppDelegate.swift */,
+				3F2B3C3F1E2CEF120080D402 /* Assets.xcassets */,
+				3F2B3C441E2CEF120080D402 /* Info.plist */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		3F2B3C4E1E2CF07B0080D402 /* VO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = VO;
+			sourceTree = "<group>";
+		};
+		3F2B3C4F1E2CF07F0080D402 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		72C830CB083D4E9D8FD17CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EB7C93831F3CF7F9241E8D3 /* Pods_WilDices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F2B3C311E2CEF120080D402 /* WilDices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F2B3C471E2CEF120080D402 /* Build configuration list for PBXNativeTarget "WilDices" */;
+			buildPhases = (
+				1F32009B9CBEC2D4F5085560 /* [CP] Check Pods Manifest.lock */,
+				3F2B3C2E1E2CEF120080D402 /* Sources */,
+				3F2B3C2F1E2CEF120080D402 /* Frameworks */,
+				3F2B3C301E2CEF120080D402 /* Resources */,
+				C84535E63E72BEC76C7F1676 /* [CP] Embed Pods Frameworks */,
+				389B1F13CB3DFFDCF7CE5EA0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WilDices;
+			productName = WilDices;
+			productReference = 3F2B3C321E2CEF120080D402 /* WilDices.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F2B3C2A1E2CEF120080D402 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = EaiMateus;
+				TargetAttributes = {
+					3F2B3C311E2CEF120080D402 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3F2B3C2D1E2CEF120080D402 /* Build configuration list for PBXProject "WilDices" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F2B3C291E2CEF120080D402;
+			productRefGroup = 3F2B3C331E2CEF120080D402 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F2B3C311E2CEF120080D402 /* WilDices */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F2B3C301E2CEF120080D402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F2B3C431E2CEF120080D402 /* LaunchScreen.storyboard in Resources */,
+				3F2B3C401E2CEF120080D402 /* Assets.xcassets in Resources */,
+				3F2B3C3B1E2CEF120080D402 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F32009B9CBEC2D4F5085560 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		389B1F13CB3DFFDCF7CE5EA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WilDices/Pods-WilDices-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C84535E63E72BEC76C7F1676 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WilDices/Pods-WilDices-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F2B3C2E1E2CEF120080D402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F515BF91E2E500800BB5201 /* MesasTableViewController.swift in Sources */,
+				3F2B3C361E2CEF120080D402 /* AppDelegate.swift in Sources */,
+				3F515C051E2E52B600BB5201 /* FichaTableViewCell.swift in Sources */,
+				3F515BFB1E2E502700BB5201 /* MesaTableViewCell.swift in Sources */,
+				3F515C011E2E527C00BB5201 /* PersonagemTableViewCell.swift in Sources */,
+				3F515BFD1E2E51FC00BB5201 /* MesaViewController.swift in Sources */,
+				3F2B3C3E1E2CEF120080D402 /* WilDices.xcdatamodeld in Sources */,
+				3F515BFF1E2E526500BB5201 /* ReferenciaTableViewController.swift in Sources */,
+				3F515C031E2E52AA00BB5201 /* FichasTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3F2B3C391E2CEF120080D402 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F2B3C3A1E2CEF120080D402 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F2B3C411E2CEF120080D402 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F2B3C421E2CEF120080D402 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F2B3C451E2CEF120080D402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F2B3C461E2CEF120080D402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F2B3C481E2CEF120080D402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4DA1C60396B34B2FB7A36A2 /* Pods-WilDices.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WilDices/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = e.ai.mateus.uft.WilDices;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3F2B3C491E2CEF120080D402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EFA83BBCF096A539C0AA8D4 /* Pods-WilDices.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WilDices/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = e.ai.mateus.uft.WilDices;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F2B3C2D1E2CEF120080D402 /* Build configuration list for PBXProject "WilDices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F2B3C451E2CEF120080D402 /* Debug */,
+				3F2B3C461E2CEF120080D402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F2B3C471E2CEF120080D402 /* Build configuration list for PBXNativeTarget "WilDices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F2B3C481E2CEF120080D402 /* Debug */,
+				3F2B3C491E2CEF120080D402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3F2B3C3C1E2CEF120080D402 /* WilDices.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3F2B3C3D1E2CEF120080D402 /* WilDices.xcdatamodel */,
+			);
+			currentVersion = 3F2B3C3D1E2CEF120080D402 /* WilDices.xcdatamodel */;
+			path = WilDices.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3F2B3C2A1E2CEF120080D402 /* Project object */;
+}
