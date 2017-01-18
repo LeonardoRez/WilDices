@@ -8,8 +8,6 @@
 
 import UIKit
 import CoreData
-import FacebookLogin
-import FacebookCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -41,7 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Call the 'activate' method to log an app event for use
         // in analytics and advertising reporting.
-        AppEventsLogger.activate(application)
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
