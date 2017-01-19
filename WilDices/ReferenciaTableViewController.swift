@@ -9,6 +9,8 @@
 import UIKit
 
 class ReferenciaTableViewController: UITableViewController {
+    
+    var personagens = [Personagem]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,7 @@ class ReferenciaTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        personagens = PersonagemDAO.getLista()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,18 +37,27 @@ class ReferenciaTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return personagens.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "persoStatIdentifier", for: indexPath)
 
         // Configure the cell...
+        if let fichaCell = cell as? PersonagemTableViewCell{
+            let personagem = personagens[indexPath.row]
+            
+            fichaCell.nomePersonagemLabel.text = personagem.nomePersonagem
+            
+            
+            
+            return fichaCell
+        }
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
