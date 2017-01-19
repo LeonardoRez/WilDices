@@ -112,7 +112,7 @@
                                 <connections>
                                     <outlet property="imagemMesa" destination="anu-He-gWQ" id="iRh-zH-dtW"/>
                                     <outlet property="nomeMesaLabel" destination="uUu-GL-SqQ" id="jgh-0Y-COu"/>
-                                    <segue destination="hnj-Gg-FKn" kind="show" id="mYd-44-Bdf"/>
+                                    <segue destination="hnj-Gg-FKn" kind="show" identifier="mesaView" id="mYd-44-Bdf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -143,7 +143,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="VDD-dO-jf2" customClass="FichaTableViewCell" customModule="WilDices" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="fichaIdentifier" rowHeight="124" id="VDD-dO-jf2" customClass="FichaTableViewCell" customModule="WilDices" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="124"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VDD-dO-jf2" id="Vjc-fl-aSA">
@@ -404,11 +404,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5pw-sF-SLv">
-                                <rect key="frame" x="16" y="269" width="343" height="330"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text=" " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5pw-sF-SLv">
+                                <rect key="frame" x="16" y="311" width="343" height="288"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <string key="text">D10 resultado: 9 D10 resultado: 9 D10 resultado: 9 D10 resultado: 9 D10 resultado: 9 D10 resultado: 9 D10 resultado: 9 D10 resultado: 9 D10 resultado: 9 D10 resultado: 9 D10 resultado: 9 D10 resultado: 9 D10 resultado: 9 D10 resultado: 9 D10 resultado: 9 D10 resultado: 9 </string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -416,49 +415,50 @@
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zbl-Kb-w87">
                                 <rect key="frame" x="0.0" y="20" width="375" height="216"/>
                                 <subviews>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zd3-gx-EkW">
-                                        <rect key="frame" x="0.0" y="33" width="75" height="150"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <pickerView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="3VA-Aa-fgy">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                        <color key="backgroundColor" name="knobColor" catalog="System" colorSpace="catalog"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="bGe-h3-fs3"/>
-                                            <constraint firstAttribute="width" constant="75" id="z0s-1D-7Pj"/>
-                                        </constraints>
                                     </pickerView>
-                                    <pickerView contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3VA-Aa-fgy">
-                                        <rect key="frame" x="75" y="0.0" width="249" height="216"/>
-                                        <color key="backgroundColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                    </pickerView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apv-3C-6O4">
-                                        <rect key="frame" x="324" y="93" width="51" height="30"/>
-                                        <state key="normal" title="ROLL!!!"/>
-                                        <connections>
-                                            <action selector="rolarDado:" destination="Yd3-4v-QmE" eventType="touchUpInside" id="6g9-Ec-eEj"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="3VA-Aa-fgy" firstAttribute="top" secondItem="zbl-Kb-w87" secondAttribute="top" id="L49-AK-oKb"/>
+                                </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Histórico de rolagens" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNv-gY-oj2">
-                                <rect key="frame" x="16" y="243" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apv-3C-6O4">
+                                <rect key="frame" x="151" y="244" width="73" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="ROLL!!!">
+                                    <color key="titleColor" name="knobColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="rolarDado:" destination="Yd3-4v-QmE" eventType="touchUpInside" id="6g9-Ec-eEj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Histórico de rolagens" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNv-gY-oj2">
+                                <rect key="frame" x="16" y="291" width="343" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="apv-3C-6O4" firstAttribute="centerX" secondItem="9v6-U2-Oyr" secondAttribute="centerX" id="9Zg-7t-Kdg"/>
                             <constraint firstAttribute="trailing" secondItem="zbl-Kb-w87" secondAttribute="trailing" id="ODG-4Q-pQ9"/>
                             <constraint firstItem="zbl-Kb-w87" firstAttribute="leading" secondItem="9v6-U2-Oyr" secondAttribute="leading" id="PoE-1V-U2T"/>
+                            <constraint firstItem="oNv-gY-oj2" firstAttribute="leading" secondItem="9v6-U2-Oyr" secondAttribute="leadingMargin" id="cJW-Xq-3j3"/>
+                            <constraint firstItem="apv-3C-6O4" firstAttribute="top" secondItem="zbl-Kb-w87" secondAttribute="bottom" constant="8" id="pmA-xS-1Mb"/>
+                            <constraint firstItem="oNv-gY-oj2" firstAttribute="top" secondItem="apv-3C-6O4" secondAttribute="bottom" constant="8" id="rKP-fA-8c9"/>
                             <constraint firstItem="zbl-Kb-w87" firstAttribute="top" secondItem="9v6-U2-Oyr" secondAttribute="top" constant="20" id="sng-GW-3xI"/>
+                            <constraint firstItem="oNv-gY-oj2" firstAttribute="trailing" secondItem="9v6-U2-Oyr" secondAttribute="trailingMargin" id="yoS-xq-z1y"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="xhL-og-T58"/>
                     <connections>
                         <outlet property="dadosPickerView" destination="3VA-Aa-fgy" id="qAn-OR-zcK"/>
                         <outlet property="historicoTextView" destination="5pw-sF-SLv" id="qq4-V9-cyH"/>
-                        <outlet property="quantDadosPickerView" destination="zd3-gx-EkW" id="CbC-RP-Mcm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nQe-0m-y54" userLabel="First Responder" sceneMemberID="firstResponder"/>
