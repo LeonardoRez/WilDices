@@ -49,8 +49,8 @@ class ReferenciaTableViewController: UITableViewController {
             let personagem = personagens[indexPath.row]
             
             fichaCell.nomePersonagemLabel.text = personagem.nomePersonagem
-            
-            
+            fichaCell.quantVidaStepper.autorepeat = true
+            fichaCell.quantVidaLabel.text = personagem.pontosDeVida
             
             return fichaCell
         }

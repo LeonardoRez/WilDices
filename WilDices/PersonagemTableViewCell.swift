@@ -13,6 +13,15 @@ class PersonagemTableViewCell: UITableViewCell {
     @IBOutlet weak var quantVidaLabel: UILabel!
     @IBOutlet weak var quantVidaStepper: UIStepper!
     @IBOutlet weak var nomePersonagemLabel: UILabel!
+    
+    
+
+    @IBAction func mudarVida(_ sender: UIStepper) {
+        quantVidaLabel.text = Int(sender.value).description
+    }
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
