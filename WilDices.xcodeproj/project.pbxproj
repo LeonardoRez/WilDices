@@ -19,6 +19,8 @@
 		3F515C011E2E527C00BB5201 /* PersonagemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F515C001E2E527C00BB5201 /* PersonagemTableViewCell.swift */; };
 		3F515C031E2E52AA00BB5201 /* FichasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F515C021E2E52AA00BB5201 /* FichasTableViewController.swift */; };
 		3F515C051E2E52B600BB5201 /* FichaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F515C041E2E52B600BB5201 /* FichaTableViewCell.swift */; };
+		3F8838C91E30DD4200281E66 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8838C81E30DD4200281E66 /* CoreDataManager.swift */; };
+		3F8838CD1E30E13700281E66 /* sistemaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8838CC1E30E13700281E66 /* sistemaDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		3F515C001E2E527C00BB5201 /* PersonagemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonagemTableViewCell.swift; sourceTree = "<group>"; };
 		3F515C021E2E52AA00BB5201 /* FichasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichasTableViewController.swift; sourceTree = "<group>"; };
 		3F515C041E2E52B600BB5201 /* FichaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaTableViewCell.swift; sourceTree = "<group>"; };
+		3F8838C81E30DD4200281E66 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		3F8838CC1E30E13700281E66 /* sistemaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sistemaDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		3F2B3C4A1E2CF0130080D402 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3F8838C81E30DD4200281E66 /* CoreDataManager.swift */,
 				3F2B3C3C1E2CEF120080D402 /* WilDices.xcdatamodeld */,
 				3F2B3C4F1E2CF07F0080D402 /* DAO */,
 				3F2B3C4E1E2CF07B0080D402 /* VO */,
@@ -89,8 +94,8 @@
 		3F2B3C4B1E2CF01C0080D402 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3F2B3C391E2CEF120080D402 /* Main.storyboard */,
 				3F2B3C411E2CEF120080D402 /* LaunchScreen.storyboard */,
+				3F2B3C391E2CEF120080D402 /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 		3F2B3C4F1E2CF07F0080D402 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
+				3F8838CC1E30E13700281E66 /* sistemaDAO.swift */,
 			);
 			name = DAO;
 			sourceTree = "<group>";
@@ -263,8 +269,10 @@
 				3F515BFB1E2E502700BB5201 /* MesaTableViewCell.swift in Sources */,
 				3F515C011E2E527C00BB5201 /* PersonagemTableViewCell.swift in Sources */,
 				3F515BFD1E2E51FC00BB5201 /* MesaViewController.swift in Sources */,
+				3F8838CD1E30E13700281E66 /* sistemaDAO.swift in Sources */,
 				3F2B3C3E1E2CEF120080D402 /* WilDices.xcdatamodeld in Sources */,
 				3F515BFF1E2E526500BB5201 /* ReferenciaTableViewController.swift in Sources */,
+				3F8838C91E30DD4200281E66 /* CoreDataManager.swift in Sources */,
 				3F515C031E2E52AA00BB5201 /* FichasTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "118AAC777B00340CF23CFE685A645D23248AA049",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ED29EC9ACCD3C761265A73F3C306A2B8A49CDE62" : 9223372036854775807,
+    "118AAC777B00340CF23CFE685A645D23248AA049" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B6D28998-21DC-4305-802C-B67685820ED7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ED29EC9ACCD3C761265A73F3C306A2B8A49CDE62" : "..",
+    "118AAC777B00340CF23CFE685A645D23248AA049" : "WilDices\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WilDices",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WilDices.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LeonardoRez\/WilDices.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "118AAC777B00340CF23CFE685A645D23248AA049"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LeonardoRez\/hackatruck2017.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ED29EC9ACCD3C761265A73F3C306A2B8A49CDE62"
+    }
+  ]
+}
